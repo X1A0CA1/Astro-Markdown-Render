@@ -7,13 +7,13 @@
 		"packages/*"
 	],
 	"scripts": {
-		"bump:patch": "npm --workspaces --git-tag-version false version patch && npm --git-tag-version false version patch",
-		"bump:minor": "npm --workspaces --git-tag-version false version minor && npm --git-tag-version false version minor",
-		"bump:major": "npm --workspaces --git-tag-version false version major && npm --git-tag-version false version major",
-		"start": "cd demo; astro dev",
-		"build": "cd demo; astro build",
-		"serve": "cd demo; astro preview",
-		"release": "npm --workspaces publish --access public"
+		"bump:patch": "pnpm -r --git-tag-version false version patch",
+		"bump:minor": "pnpm -r --git-tag-version false version minor",
+		"bump:major": "pnpm -r --git-tag-version false version major",
+		"start": "pnpm --filter @astrojs/md.demo start",
+		"build": "pnpm --filter @astrojs/md.demo build",
+		"serve": "pnpm --filter @astrojs/md.demo serve",
+		"release": "pnpm -r publish --access public"
 	},
 	"prettier": {
 		"semi": false,
@@ -22,7 +22,7 @@
 		"useTabs": true
 	},
 	"stackblitz": {
-		"startCommand": "npm start"
+		"startCommand": "pnpm start"
 	},
 	"devDependencies": {
 		"astro": "4",

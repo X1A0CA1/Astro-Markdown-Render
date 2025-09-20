@@ -1,6 +1,9 @@
 # Astro Markdown <img src="https://jonneal.dev/astro-logo.svg" alt="" width="90" height="90" align="right">
 
-**Astro Markdown** lets you render any Markdown content in **[Astro](https://astro.build)**, optionally integrating with any existing configuration.
+> [!NOTE]
+> 这是我为了消除依赖冲突而自制的 npm 包，没有任何新功能。
+
+**Astro Markdown** 允许您在 **[Astro](https://astro.build)** 中渲染任何 Markdown 内容，并可选择与任何现有配置集成。
 
 [![NPM Version][npm-img]][npm-url]
 [![NPM Downloads][download-img]][download-url]
@@ -10,7 +13,7 @@
 ---
 import { Markdown } from '@astropub/md'
 ---
-<Markdown of={`# Hi, there!` /* Renders `<h1>Hi, there!</h1>` */} />
+<Markdown of={`# Hi, there!`} /* Renders `<h1>Hi, there!</h1>` */ />
 ```
 
 ```astro
@@ -23,15 +26,15 @@ import { markdown } from '@astropub/md'
 }
 ```
 
-## Usage
+## 用法
 
-Add **Astro Markdown** to your project.
+将 **Astro Markdown** 添加到您的项目中。
 
 ```shell
-npm install @astropub/md
+pnpm add @astropub/md
 ```
 
-Use **Astro Markdown** in your project.
+在您的项目中使用 **Astro Markdown**。
 
 ```astro
 ---
@@ -53,7 +56,7 @@ Welcome to my _website_.`
 </html>
 ```
 
-Optionally, integrate **Astro Markdown** with your existing Astro configuration.
+或者，将 **Astro Markdown** 与您现有的 Astro 配置集成。
 
 ```js
 // astro.config.js
@@ -73,9 +76,9 @@ export default defineConfig({
 })
 ```
 
-Now `markdown` configuration is automatically applied to `<Markdown>` components and `markdown()` functions.
+现在 `markdown` 配置会自动应用于 `<Markdown>` 组件和 `markdown()` 函数。
 
-Use `markdown.inline()` or `<Markdown.Inline>` to handle short strings of text without the surrounding paragraph.
+使用 `markdown.inline()` 或 `<Markdown.Inline>` 来处理不带段落包围的短文本字符串。
 
 ```astro
 ---
@@ -99,11 +102,11 @@ import { markdown } from '@astropub/md'
 
 <br />
 
-Enjoy!
+尽情享用吧！
 
-## Project Structure
+## 项目结构
 
-Inside of this Astro project, you'll see the following folders and files:
+在这个 Astro 项目中，您会看到以下文件夹和文件：
 
 ```
 /
@@ -119,23 +122,23 @@ Inside of this Astro project, you'll see the following folders and files:
         └── ...etc
 ```
 
-This project uses **workspaces** to develop a single package, `@astropub/md`.
+该项目使用 **workspaces** 来开发单个包 `@astropub/md`。
 
-It also includes a minimal Astro project, `demo`, for developing and demonstrating the component.
+它还包括一个最小的 Astro 项目 `demo`，用于开发和演示该组件。
 
-## Commands
+## 命令
 
-All commands are run from the root of the project, from a terminal:
+所有命令都在项目的根目录下的终端中运行：
 
-| Command         | Action                                       |
-|:----------------|:---------------------------------------------|
-| `npm install`   | Installs dependencies                        |
-| `npm run start` | Starts local dev server at `localhost:3000`  |
-| `npm run build` | Build your production site to `./dist/`      |
-| `npm run serve` | Preview your build locally, before deploying |
+| 命令 | 操作 |
+|:---|:---|
+| `pnpm install` | 安装依赖 |
+| `pnpm run start` | 在 `localhost:3000` 启动本地开发服务器 |
+| `pnpm run build` | 构建您的生产站点到 `./dist/` |
+| `pnpm run serve` | 在部署前本地预览您的构建 |
 
-Want to learn more?
-Read the [Astro documentation][docs-url] or jump into the [Astro Discord][chat-url].
+想了解更多？
+请阅读 [Astro 文档][docs-url] 或加入 [Astro Discord][chat-url]。
 
 [chat-url]: https://astro.build/chat
 [docs-url]: https://github.com/withastro/astro

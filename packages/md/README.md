@@ -1,6 +1,9 @@
 # Astro Markdown <img src="https://jonneal.dev/astro-logo.svg" alt="" width="90" height="90" align="right">
 
-**Astro Markdown** lets you render any Markdown content in **[Astro](https://astro.build)**, optionally integrating with any existing configuration.
+> [!NOTE]
+> 这是我为了消除依赖冲突而自制的 npm 包，没有任何新功能。
+
+**Astro Markdown** 允许您在 **[Astro](https://astro.build)** 中渲染任何 Markdown 内容，并可选择与任何现有配置集成。
 
 [![NPM Version][npm-img]][npm-url]
 [![NPM Downloads][download-img]][download-url]
@@ -10,7 +13,7 @@
 ---
 import { Markdown } from '@astropub/md'
 ---
-<Markdown of={`# Hi, there!` /* Renders `<h1>Hi, there!</h1>` */} />
+<Markdown of={`# Hi, there!`} /* Renders `<h1>Hi, there!</h1>` */ />
 ```
 
 ```astro
@@ -23,15 +26,15 @@ import { markdown } from '@astropub/md'
 }
 ```
 
-## Usage
+## 用法
 
-Add **Astro Markdown** to your project.
+将 **Astro Markdown** 添加到您的项目中。
 
 ```shell
 npm install @astropub/md
 ```
 
-Use **Astro Markdown** in your project.
+在您的项目中使用 **Astro Markdown**。
 
 ```astro
 ---
@@ -53,7 +56,7 @@ Welcome to my _website_.`
 </html>
 ```
 
-Optionally, integrate **Astro Markdown** with your existing Astro configuration.
+或者，将 **Astro Markdown** 与您现有的 Astro 配置集成。
 
 ```js
 // astro.config.js
@@ -73,9 +76,9 @@ export default defineConfig({
 })
 ```
 
-Now `markdown` configuration is automatically applied to `<Markdown>` components and `markdown()` functions.
+现在 `markdown` 配置会自动应用于 `<Markdown>` 组件和 `markdown()` 函数。
 
-Use `markdown.inline()` or `<Markdown.Inline>` to handle short strings of text without the surrounding paragraph.
+使用 `markdown.inline()` 或 `<Markdown.Inline>` 来处理不带段落包围的短文本字符串。
 
 ```astro
 ---
@@ -99,12 +102,12 @@ import { markdown } from '@astropub/md'
 
 <br />
 
-Enjoy!
+尽情享用吧！
 
 ---
 
-Want to learn more?
-Read the [Astro documentation][docs-url] or jump into the [Astro Discord][chat-url].
+想了解更多？
+请阅读 [Astro 文档][docs-url] 或加入 [Astro Discord][chat-url]。
 
 [chat-url]: https://astro.build/chat
 [docs-url]: https://github.com/withastro/astro
