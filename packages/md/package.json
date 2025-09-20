@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/package.json",
 	"name": "@cutexiaocai/astro-markdown-render",
 	"description": "Render any Markdown content in Astro",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"license": "CC0-1.0",
 	"exports": {
