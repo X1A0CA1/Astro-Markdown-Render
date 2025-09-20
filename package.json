@@ -27,5 +27,6 @@
 	"devDependencies": {
 		"astro": "5",
 		"types-object": "latest"
-	}
+	},
+	"version": "0.0.1"
 }
