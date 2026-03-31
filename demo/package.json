@@ -10,6 +10,6 @@
 	},
 	"devDependencies": {
 		"@cutexiaocai/astro-markdown-render": "workspace:*",
-		"astro": "5"
+		"astro": "6"
 	}
 }

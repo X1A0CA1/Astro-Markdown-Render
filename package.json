@@ -25,7 +25,7 @@
 		"startCommand": "pnpm start"
 	},
 	"devDependencies": {
-		"astro": "5",
+		"astro": "6",
 		"types-object": "latest"
 	},
 	"version": "0.0.1"
